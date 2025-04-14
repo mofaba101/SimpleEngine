@@ -1,0 +1,12 @@
+[submodule "SimpleEngine/vendor/spdlog"]
+	path = SimpleEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "SimpleEngine/vendor/GLFW"]
+	path = SimpleEngine/vendor/GLFW
+	url = https://github.com/TheCherno/GLFW
+[submodule "SimpleEngine/vendor/ImGui"]
+	path = SimpleEngine/vendor/ImGui
+	url = https://github.com/ocornut/imgui
+[submodule "SimpleEngine/vendor/glm"]
+	path = SimpleEngine/vendor/glm
+	url = https://github.com/g-truc/glm

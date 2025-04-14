@@ -1,36 +1,102 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Platforms">
+      <UniqueIdentifier>{DDACA145-4917-56BC-9255-0762FEFE3311}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Platforms\Windows">
+      <UniqueIdentifier>{17E40808-83FA-069E-CC71-92BF38C7D725}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="SimpleEngine">
+      <UniqueIdentifier>{4528F64C-318B-85F1-DA10-BEA7C6525174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleEngine\Events">
+      <UniqueIdentifier>{8934AD1E-F595-8A2C-7E03-D1DEEA63C1EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleEngine\ImGui">
+      <UniqueIdentifier>{2FFD6EF9-1BE1-2F4F-8441-2AA270441AD1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\SimpleEngine\Core.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Platforms\Windows\WindowsInput.h">
+      <Filter>Platforms\Windows</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platforms\Windows\WindowsWindow.h">
+      <Filter>Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SimpleEngine.h" />
     <ClInclude Include="src\SimpleEngine\Application.h">
-      <Filter>Header Files</Filter>
+      <Filter>SimpleEngine</Filter>
     </ClInclude>
-    <ClInclude Include="src\SimpleEngine.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\SimpleEngine\Core.h">
+      <Filter>SimpleEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\SimpleEngine\EntryPoint.h">
-      <Filter>Header Files</Filter>
+      <Filter>SimpleEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\SimpleEngine\Events\ApplicationEvent.h">
+      <Filter>SimpleEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SimpleEngine\Events\Event.h">
+      <Filter>SimpleEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SimpleEngine\Events\KeyEvent.h">
+      <Filter>SimpleEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SimpleEngine\Events\MouseEvent.h">
+      <Filter>SimpleEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SimpleEngine\ImGui\ImGuiLayer.h">
+      <Filter>SimpleEngine\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SimpleEngine\Input.h">
+      <Filter>SimpleEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SimpleEngine\KeyCodes.h">
+      <Filter>SimpleEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SimpleEngine\Layer.h">
+      <Filter>SimpleEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SimpleEngine\LayerStack.h">
+      <Filter>SimpleEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SimpleEngine\Log.h">
+      <Filter>SimpleEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SimpleEngine\MouseButtonCodes.h">
+      <Filter>SimpleEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SimpleEngine\Window.h">
+      <Filter>SimpleEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sepch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\SimpleEngine\Application.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\Platforms\Windows\WindowsInput.cpp">
+      <Filter>Platforms\Windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platforms\Windows\WindowsWindow.cpp">
+      <Filter>Platforms\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SimpleEngine\Application.cpp">
+      <Filter>SimpleEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SimpleEngine\ImGui\ImGuiBuild.cpp">
+      <Filter>SimpleEngine\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SimpleEngine\ImGui\ImGuiLayer.cpp">
+      <Filter>SimpleEngine\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SimpleEngine\Layer.cpp">
+      <Filter>SimpleEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SimpleEngine\LayerStack.cpp">
+      <Filter>SimpleEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SimpleEngine\Log.cpp">
+      <Filter>SimpleEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sepch.cpp" />
   </ItemGroup>
 </Project>
